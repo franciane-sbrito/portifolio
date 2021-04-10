@@ -7,47 +7,75 @@ import imageJs from '../../images/js.png'
 import imageReact from '../../images/react.png'
 import imageLinux from '../../images/linux.png'
 import imageGit from '../../images/git.png'
+import imageMysql from '../../images/mysql.png'
+import imageNodejs from '../../images/nodejs.png'
+import CardSkills from '../../Components/cardSkills/cardSkills';
 
 const AboutPage = () => {
   return (
     <ContainerPage id={"sobre"}>
       <ContainerDescription>
 
-      <Title>SOBRE MIM</Title>
-      <Description>Meu nome é Franciane e sou desenvolvedora Front-end JR. Gosto muito de aprender sobre novas tecnologias por isso comecei a participar de um bootcamp de programação onde aprendi as soft skills e as hards skills mais procuradas no mercado. Espero poder te ajudar e se sim entre em contato comigo através de alguma das minhas redes sociais. :)</Description>
+        <Title>SOBRE MIM</Title>
+        <Description>Meu nome é Franciane e sou desenvolvedora Front-end JR. Gosto muito de aprender sobre novas tecnologias por isso comecei a participar de um bootcamp de programação onde aprendi as soft skills e as hards skills mais procuradas no mercado. Espero poder te ajudar e se sim entre em contato comigo através de alguma das minhas redes sociais. :)</Description>
       </ContainerDescription>
       <Title>Minhas Habilidades</Title>
+
       <ContainerAbilities>
-        <Abilities>
-          <ContainerImage><Image src={imageHTML} alt='' /></ContainerImage>
-          <TitleAbilities>HTML</TitleAbilities>
-          <ContentAbilities>Linguagem de marcação de páginas Web.</ContentAbilities>
-        </Abilities>
-        <Abilities>
-          <ContainerImage><Image src={imageCSS} alt='' /></ContainerImage>
-          <TitleAbilities>CSS</TitleAbilities>
-          <ContentAbilities>Mecanismo para adicionar estilo.</ContentAbilities>
-        </Abilities>
-        <Abilities>
-          <ContainerImage><Image src={imageReact} alt='' /></ContainerImage>
-          <TitleAbilities>React.js</TitleAbilities>
-          <ContentAbilities>Biblioteca JavaScript com foco em criar interfaces de usuário.</ContentAbilities>
-        </Abilities>
-        <Abilities>
-          <ContainerImage><Image src={imageJs} alt='' /></ContainerImage>
-          <TitleAbilities>Javascript</TitleAbilities>
-          <ContentAbilities>Linguagem de programação interpretada estruturada, de script em alto nível.</ContentAbilities>
-        </Abilities>
-        <Abilities>
-          <ContainerImage><Image src={imageLinux} alt='' /></ContainerImage>
-          <TitleAbilities>Linux</TitleAbilities>
-          <ContentAbilities>Sistema operacional.</ContentAbilities>
-        </Abilities>
-        <Abilities>
-          <ContainerImage><Image src={imageGit} alt='' /></ContainerImage>
-          <TitleAbilities>Git</TitleAbilities>
-          <ContentAbilities>Sistema de controle de versões distribuído.</ContentAbilities>
-        </Abilities>
+
+        <CardSkills
+          src={imageHTML}
+          language={"HTML"}
+          description={"Linguagem de marcação de páginas Web."}
+        />
+
+        <CardSkills
+          src={imageCSS}
+          language={"CSS"}
+          description={"Mecanismo para adicionar estilo."}
+        />
+
+        <CardSkills
+          src={imageReact}
+          language={"React.js"}
+          description={"Biblioteca JavaScript com foco em criar interfaces de usuário."}
+        />
+
+        <CardSkills
+          src={imageJs}
+          language={"Javascript"}
+          description={"Linguagem de programação interpretada estruturada, de script em alto nível."}
+        />
+
+        <CardSkills
+          src={imageLinux}
+          language={"Linux"}
+          description={"Sistema operacional."}
+        />
+
+        <CardSkills
+          src={imageGit}
+          language={"Git"}
+          description={"Sistema de controle de versões distribuído."}
+        />
+
+        <CardSkills
+          src={imageNodejs}
+          language={"Node.js"}
+          description={"Node.js é um software que executa códigos JavaScript no backend e frontend"}
+        />
+
+        <CardSkills
+          src={imageMysql}
+          language={"MySQL"}
+          description={"O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL."}
+        />
+
+        <CardSkills
+          /* src={imageMysql}
+          language={"MySQL"}
+          description={"O MySQL é um sistema de gerenciamento de banco de dados, que utiliza a linguagem SQL."}
+         *//>
 
       </ContainerAbilities>
     </ContainerPage>

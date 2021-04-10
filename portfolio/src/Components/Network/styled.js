@@ -8,6 +8,8 @@ color: white;
 @media screen and (max-width: 600px) {
 margin-top: 330px;
 width: 60px;
+
+cursor: unset;
 }
 `
 

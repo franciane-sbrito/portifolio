@@ -12,12 +12,14 @@ align-items: center;
 flex-direction: column;
 `
 export const ContainerProjects = styled.div`
-display: flex;
-justify-content: center;
-align-items: center;
+display: grid;
+grid-template-columns: 1fr 1fr 1fr;
+grid-template-rows: 1fr 1fr;
 width: 80vw;
 @media screen and (max-width: 600px) {
 flex-direction: column;
+grid-template-columns: 1fr;
+
 }
 `
 
@@ -30,7 +32,6 @@ height: 35vh;
 text-align: center;
 background-color: #030927;
 margin: 20px;
-/* position: relative; */
 background-image: url('imagehome.png');
 background-repeat: space;
 background-size: 85vw 35vh;
@@ -76,7 +77,6 @@ align-items: center;
 background-color: transparent;
 visibility: hidden;
 @media screen and (max-width: 600px) {
- /*  position: absolute; */
  bottom: 239px;
  width: 80vw;
 }
@@ -93,8 +93,34 @@ height: 35vh;
 transform: scale(0.9);
 
 @media screen and (max-width: 600px) {
-  
   width: 80vw;
 }
 `
+export const ContainerButton = styled.div`
+display: flex;
+align-items: center;
+flex-direction: column;
+`
+export const Button = styled.button`
+height: 50px;
+width: 70%;
+margin: 5px;
+border-radius: 10px;
+font-size: 18px;
+box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.9);
+cursor: inherit;
+background-color: #030927;
+color: #E3557D;
+&:hover {
+  box-shadow: 2px 2px 12px -94px rgba(10,10,10,0.92);
+border-bottom: 4px solid #2B314F;
+border-top: 1px solid #2B314F;
+} 
+&:focus{
+  outline: 0px;
+}
+@media screen and (max-width: 600px) {
+  display: none;
+}
 
+`
