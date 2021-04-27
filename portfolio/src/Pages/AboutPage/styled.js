@@ -42,6 +42,7 @@ word-spacing: 2px;
 }
 `
 export const Title = styled.h3`
+padding-top: 150px;
 font-family: 'Special Elite', cursive;
 margin: 15px 0px;
 font-size: 35px;

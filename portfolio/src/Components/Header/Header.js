@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+
+
 import {
     ContainerHeader,
     ContainerName,
@@ -7,7 +9,9 @@ import {
     ButtonDiferent,
     ContainerMenu,
     ContainerButton2,
-    ButtonMedia
+    ButtonMedia,
+    StyledMenuIcon,
+    StyledCloseIcon
 } from './styled'
 
 const Header = () => {
@@ -24,20 +28,20 @@ const Header = () => {
 
 
             <ContainerButton>
-                <Button href="home">Home</Button>
-                <Button href="sobre">Sobre</Button>
-                <Button href="experiencias">Experiências</Button>
-                <Button href="habilidades">Habilidades</Button>
+                <Button href="#">Home</Button>
+                <Button href="#sobre">Sobre</Button>
+                <Button href="#habilities">Habilidades</Button>
+                <Button href="#portifolio">Experiências</Button>
                 <ButtonDiferent href="https://api.whatsapp.com/send?phone=5531992164866">Fale comigo</ButtonDiferent>
             </ContainerButton>
 
 
             <ContainerMenu>
 
-                {dropDrow ? <i class="fas fa-bars" onClick={openDropDrow}></i> : <i class="fas fa-times" onClick={openDropDrow}></i>}
+                {dropDrow ? <StyledMenuIcon fontSize="large" onClick={openDropDrow}/> : <StyledCloseIcon onClick={openDropDrow}/>}
                 {dropDrow ? <div></div> : <ContainerButton2>
                     <ButtonMedia href="home">Home</ButtonMedia>
-                    <ButtonMedia href="sobre">Sobre</ButtonMedia>
+                    <ButtonMedia href="#sobre">Sobre</ButtonMedia>
                     <ButtonMedia href="experiencias">Experiências</ButtonMedia>
                     <ButtonMedia href="habilidades">Habilidades</ButtonMedia>
                     <ButtonMedia href="https://api.whatsapp.com/send?phone=5531992164866">Fale comigo</ButtonMedia>

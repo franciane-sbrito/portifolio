@@ -1,4 +1,6 @@
 import styled from 'styled-components'
+import CloseIcon from '@material-ui/icons/Close';
+import MenuIcon from '@material-ui/icons/Menu';
 
 export const ContainerHeader = styled.div`
 font-family: 'Roboto', sans-serif;
@@ -23,7 +25,8 @@ padding-left: 100px;
 position: relative;
 color: #E3557D;
 @media screen and (max-width: 600px) {
-    padding-left: 20px;
+    padding-left: 70px;
+
     font-size: 14px;
 }
 `
@@ -72,17 +75,16 @@ align-items: center;
 
 export const ContainerMenu = styled.div`
 width: 0;
-i {
-    display: none;
-}
+
 @media screen and (max-width: 600px) {
 display: flex;
+/* justify-content: space-between; */
 flex-direction: column;
 margin: 16px 16px 0 0;
 height: 20vh;
 width: 100vw;
 position: absolute;
-
+/* 
 i{
 font-size:40px;
 height: 40px;
@@ -93,7 +95,7 @@ align-items: center;
 border: 2px solid #EEEEEE;
 color: white;
 border: none;
-}
+} */
 }
 `
 export const ContainerButton2 = styled.div`
@@ -122,5 +124,38 @@ text-decoration: none;
 background-color: rgb(20, 20, 40, 0.85);
 height: 1.5vh;
 transition: 5
+}
+`
+export const StyledCloseIcon = styled(CloseIcon)`
+    color: rgb(33, 37, 41, 0.0);
+    @media screen and (max-width: 600px) {
+
+color: white;
+border: none;
+font-size:40px;
+height: 40px;
+margin: 45px 20px 0 20px;
+display: flex;
+justify-content: flex-end;
+
+/* width: 10vw; */
+/* align-items: center; */
+/* border: 2px solid #EEEEEE; */
+    }
+`
+
+export const StyledMenuIcon = styled(MenuIcon)`
+    color: rgb(33, 37, 41, 0.0);
+    display: none;
+@media screen and (max-width: 600px) {
+font-size:40px;
+height: 40px;
+margin: 45px 20px 0 20px;
+display: flex;
+justify-content: flex-end;
+align-items: center;
+border: 2px solid #EEEEEE;
+color: white;
+border: none;
 }
 `

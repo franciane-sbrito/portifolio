@@ -25,6 +25,7 @@ height: 60px;
 width: 50px;
 line-height: 60px;
 padding-left: 25%;
+color:  #E3557D;
 &:hover{
     margin-left: 35px;
 transition: all 1s;

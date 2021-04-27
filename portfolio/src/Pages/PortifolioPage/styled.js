@@ -25,21 +25,18 @@ grid-template-columns: 1fr;
 
 export const CardProjetos = styled.a`
 text-decoration: none;
-
 width: 25vw;
 margin: 5px;
 height: 35vh;
 text-align: center;
 background-color: #030927;
 margin: 20px;
-background-image: url('imagehome.png');
-background-repeat: space;
-background-size: 85vw 35vh;
 
 &:hover div{
     visibility: visible;
     background-color: rgb(03, 09, 27, 0.7);
     transition: all 2s;
+    border-radius: 8px;
 }
 &:hover img{
 transform: scale(1);
@@ -85,11 +82,14 @@ visibility: hidden;
 
 export const Image = styled.img`
 /* background-image: url('imagehome.png'); */
-/* background-repeat: space; */
+background-repeat: space;
 background-size: 85vw 35vh;
 width: 25vw;
+max-width: 25vw;
 /* border: 2px solid rgb(30, 32, 48); */
+max-height: 35vh;
 height: 35vh;
+border-radius: 8px;
 transform: scale(0.9);
 
 @media screen and (max-width: 600px) {
@@ -101,20 +101,26 @@ display: flex;
 align-items: center;
 flex-direction: column;
 `
-export const Button = styled.button`
+export const Button = styled.a`
+text-decoration: none;
+display: flex;
+align-items: center;
+justify-content: center;
 height: 50px;
 width: 70%;
 margin: 5px;
 border-radius: 10px;
-font-size: 18px;
+font-size: 22px;
 box-shadow: 2px 2px 2px 0 rgba(0, 0, 0, 0.9);
+border-bottom: 3px solid #000;
 cursor: inherit;
 background-color: #030927;
 color: #E3557D;
 &:hover {
   box-shadow: 2px 2px 12px -94px rgba(10,10,10,0.92);
-border-bottom: 4px solid #2B314F;
-border-top: 1px solid #2B314F;
+border: 2px solid #2B314F;
+border-bottom: 6px solid #2B314F;
+
 } 
 &:focus{
   outline: 0px;

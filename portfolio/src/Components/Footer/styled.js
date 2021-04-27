@@ -21,20 +21,18 @@ export const ContainerNetwork = styled.a`
 display: flex;  
 justify-content: center;
 align-items: center;
-margin: 0px 0;
+margin: 0px 20px;
 text-decoration: none;
 height: 60px;
-/* Icones redes sociais */
-i {
 height: 60px;
 font-size: 60px;
 color:  #EEE;
 padding: 13px;
 border-radius: 3px;
-transform: scale(0.9);
-}
-i:hover{
-transform: scale(1.1);
+transform: scale(1.5);
+
+&:hover{
+transform: scale(1.9);
 transition: all 0.5s;
 }
 @media screen and (max-width: 600px) {

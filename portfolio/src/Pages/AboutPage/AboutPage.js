@@ -19,7 +19,7 @@ const AboutPage = () => {
         <Title>SOBRE MIM</Title>
         <Description>Meu nome é Franciane e sou desenvolvedora Front-end JR. Gosto muito de aprender sobre novas tecnologias por isso comecei a participar de um bootcamp de programação onde aprendi as soft skills e as hards skills mais procuradas no mercado. Espero poder te ajudar e se sim entre em contato comigo através de alguma das minhas redes sociais. :)</Description>
       </ContainerDescription>
-      <Title>Minhas Habilidades</Title>
+      <Title id={"habilities"}>Minhas Habilidades</Title>
 
       <ContainerAbilities>
 

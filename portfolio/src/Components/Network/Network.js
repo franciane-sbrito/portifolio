@@ -1,37 +1,32 @@
 import React from 'react';
 import { ContainerNetworks, ContainerNetwork, Image } from './styled'
-import ImageInstagram from '../../images/instagram.svg'
-import ImageLinkedin from '../../images/linkedin.svg'
-import ImageWhatsapp from '../../images/whatsapp.svg'
-import ImageGithub from '../../images/github.svg'
-import ImageEmail from '../../images/email.svg'
+import LinkedInIcon from '@material-ui/icons/LinkedIn';
+import InstagramIcon from '@material-ui/icons/Instagram';
+import WhatsAppIcon from '@material-ui/icons/WhatsApp';
+import GitHubIcon from '@material-ui/icons/GitHub';
+import EmailIcon from '@material-ui/icons/Email';
 
 const Network = () => {
   return (
     <ContainerNetworks>
-      <ContainerNetwork href="#">
-        <i class="fas fa-envelope-square"></i>
-      {/* <img src={ImageInstagram} alt={""} /> */}
+      <ContainerNetwork href="https://mail.google.com/mail/u/1/#inbox?compose=DmwnWrRmVXGTjLKbdsTdDZrZqlvkgBkhgPHKpQpFPVcrfDpVwjBBxSBrHSDjcsSRDzqhsVxVGtxv">
+      <EmailIcon fontSize={"large"}/>
       </ContainerNetwork>
 
-      <ContainerNetwork href="https://github.com/franciane-sbrito">
-        <i class="fab fa-github-square"></i>
-      {/* <img src={ImageLinkedin} alt={""} /> */}
+      <ContainerNetwork href="https://github.com/franciane-brito">
+        <GitHubIcon fontSize={"large"}/>
       </ContainerNetwork>
 
-      <ContainerNetwork href="#">
-        <i class="fab fa-instagram-square"></i>
-      {/* <img src={ImageWhatsapp} alt={""} /> */}
+      <ContainerNetwork href="https://www.instagram.com/francianebrito4/">
+      <InstagramIcon fontSize={"large"}/>
       </ContainerNetwork>
 
       <ContainerNetwork href="https://www.linkedin.com/in/franciane-brito-7b2283189">
-        <i class="fab fa-linkedin"></i>
-      {/* <img src={ImageGithub} alt={""} /> */}
+      <LinkedInIcon fontSize={"large"}/>
       </ContainerNetwork>
 
       <ContainerNetwork href="https://api.whatsapp.com/send?phone=5531992164866">
-        <i class="fab fa-whatsapp-square"></i>
-      {/* <img src={Image} alt={""} /> */}
+      <WhatsAppIcon fontSize={"large"}/>
       </ContainerNetwork>
 
     </ContainerNetworks>
