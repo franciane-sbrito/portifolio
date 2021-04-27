@@ -9,6 +9,7 @@ height: 97vh;
 background-image: url('imagehome.png');
 background-repeat: space;
 background-size: 100vw 100vh;
+background-color: #000055;
 display: flex;
 justify-content: center;
 align-items: center;
